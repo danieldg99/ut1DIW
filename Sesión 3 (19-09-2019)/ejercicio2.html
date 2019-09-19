@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio 2</title>
+    <style>
+        p {
+            background-color: lightblue;
+        }
+
+        span {
+            background-color: lightcoral;
+        }
+
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid black;
+            text-align: center;
+            padding: .3em;
+        }
+
+        table {
+            border: 1px dashed black;
+            padding: 1em;
+        }
+    </style>
 </head>
-<style>
-p{
-    background-color: lightblue;
-}
-span {
-    background-color: lightcoral;
-}
-</style>
+
 <body>
     <h1>Encabezado de h1</h1>
     <h2>Encabezado de h2</h2>
@@ -22,5 +39,39 @@ span {
     <h5>Encabezado de h5</h5>
     <h6>Encabezado de h6</h6>
     <p>Este parrafo es un elemento de bloque <span>Este span esta dentro del parrafo es un elemento en linea</span></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paco</td>
+                <td>paquito</td>
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>josito</td>
+            </tr>
+            <tr>
+                <td>Pepe</td>
+                <td>pepito</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><i>Produccion</i></td>
+                <td><i>Netflix</i></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
 </body>
+
 </html>
