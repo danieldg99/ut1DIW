@@ -23,8 +23,30 @@
             Campo de texto: <input type="text" name="campotexto2" id="campotexto2id">
             <br>
         </fieldset>
+    </form>
 
-
+    <h2>Formulario sencillo 2 en html 5 </h2>
+    <form name="formulario2" id="form2" method="" action="">
+        <fieldset>
+            <legend>Formulario sencillo 2 con labels</legend>
+            <label for="idcampo3" id="etiqueta1">Introduce el nombre del usuario: </label>
+            <input type="text" name="nombre" id="idcampo3">
+            <br>
+            <h3>Campos de tipo datalist</h3>
+            <br>
+            <label for="idlistaSSOO">Lista de Sistemas Operativos: </label>
+            <input list="listaSSOO" id="idlistaSSOO">
+            <datalist id="listaSSOO">
+                <option value="Windows 10 H2 2019"></option>
+                <option value="Ubuntu 20.04"></option>
+                <option value="Debian 10.0 Buster"></option>
+            </datalist>
+            <br>
+            <h3>Elementos de tipo button</h3>
+            <br>
+            <input type="button" value="Saludar" onclick="alert('Hola')">
+            <input type="reset" value="Reiniciar">
+        </fieldset>
     </form>
 
 
