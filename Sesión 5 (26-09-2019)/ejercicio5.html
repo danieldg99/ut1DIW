@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio 5</title>
+    <script>
+        function mostrarValorRango(valor) {
+            document.getElementById('campomostrarid').value = valor;
+        }
+    </script>
 </head>
 
 <body>
@@ -24,10 +29,66 @@
             <br>
             <br>
             <label for="campobusqueda1id">Busqueda: </label>
-            <input type="search" name="campobusqueda1" id="campobusqueda1id" placeholder="Buscar...">
+            <input type="search" name="campobusqueda1" id="campobusqueda1id" placeholder="Buscar..." size="50"
+                maxlength="40">
             <br>
             <br>
+            <label for="campocontrasenaid">Contraseña: </label>
+            <input type="password" name="campocontrasena" id="campocontrasenaid" placeholder="Introduce contraseña">
+            <br>
+            <br>
+            <label for="ficheroid">Subir</label>
+            <input type="file" name="fichero" id="ficheroid">
+            <br>
+            <br>
+            <label for="telefonoid">Telefono</label>
+            <input type="number" name="telefono" id="telefonoid">
+            <br>
+            <br>
+            <label for="urlid">URL</label>
+            <input type="url" name="url" id="urlid">
+            <br>
+            <br>
+            <label for="emailid">email</label>
+            <input type="email" name="email" id="emailid">
+            <br>
+            <br>
+            <label for="campodateid">Campo de tipo fecha:</label>
+            <input type="date" name="campodate" id="campodateid">
+            <br>
+            <br>
+            <label for="campotimeid">Campo de tipo time:</label>
+            <input type="time" name="campotime" id="campotimeid">
+            <br>
+            <br>
+            <br>
+            <label for="campocolorid">Campo de tipo color:</label>
+            <input type="color" name="campocolor" id="campocolorid">
+            <br>
+            <br>
+            <br>
+            <label for="camporangeid">Campo de tipo rango:</label>
+            <input type="range" name="camporange" id="camporangeid" min="0" max="10" value="5"
+                onchange="mostrarValorRango(this.value)">
+            <input type="text" name="campomostrar" id="campomostrarid">
+            <br>
+            <br>
+            <input list="valores">
+            <datalist id="valores">
+                <option value="0" label="0"></option>
+                <option value="1" label="1"></option>
+                <option value="2" label="2"></option>
+                <option value="3" label="3"></option>
+                <option value="4" label="4"></option>
+                <option value="5" label="5"></option>
+            </datalist>
 
+            <br>
+            <br>
+            <input type="text" name="campodni1" id="campodni1id" placeholder="Introduce tu DNI" title="Introduce tu DNI: 8 numeros y una letra de la A a la Z" autofocus required pattern="[0-9]{8}[A-Z]">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
         </fieldset>
 
     </form>
