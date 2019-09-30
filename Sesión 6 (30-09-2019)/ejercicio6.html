@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="" name="form1" id="form1id">
+        <fieldset>
+            <legend>Formulario con campo que utiliza pattern avanzado</legend>
+            <label for="dniid">DNI: </label>
+            <input type="text" name="dni" id="dniid" pattern="([a-zA-Z]|[0-9])[0-9]{7}[a-zA-Z]" placeholder="DNI: 8 numeros y una letra" title="El DNI debe contener 8 numeros del 1 al 9 y una letra de al A a la Z" size="20" maxlength="9">
+            <br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
