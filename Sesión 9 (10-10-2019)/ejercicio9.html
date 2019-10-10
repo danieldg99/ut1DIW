@@ -12,6 +12,29 @@
     <h1>Resto de elementos HTML5</h1>
     <h2>Elementos div: es un elemento en bloque</h2>
     <div class="">Esto es una capa, se utiliza para estructurar el contenido de la pagina web.</div>
+
+    <audio id="audioid" controls>
+        <source src="../../Red【Cepheid】.mp3" type="audio/mp3">
+        <source src="../../Red【Cepheid】.wav" type="audio/wav">
+        <source src="../../Red【Cepheid】.ogg" type="audio/ogg">
+            Tu navegador no soporta audio HTML5
+    </audio>
+
+    <h2>Elemento de tipo progress</h2>
+    <progress max="100" value="80"></progress>
+    <br><br>
+
+    <canvas id="canvasid" width="300px" height="150px" style="border: 1px solid black;">
+        Tu ordenador no soporta el elemento canvas
+    
+    </canvas>
+    <script>
+        const can = document.getElementById('canvasid');
+        let contexto = can.getContext("2d");
+        contexto.fillStyle = "#FF0000";
+        contexto.fillRect(0, 0, 150, 75);
+    </script>
+
 </body>
 
 </html>
